@@ -1,0 +1,62 @@
+[
+  {
+    "nume_sala": "Sala 9",
+    "numar_proiectii": 10,
+    "pret_mediu_bilet": 28.55
+  },
+  {
+    "nume_sala": "Sala 12",
+    "numar_proiectii": 8,
+    "pret_mediu_bilet": 30.12
+  },
+  {
+    "nume_sala": "Sala 2",
+    "numar_proiectii": 6,
+    "pret_mediu_bilet": 31.83
+  },
+  {
+    "nume_sala": "Sala 1",
+    "numar_proiectii": 6,
+    "pret_mediu_bilet": 35.25
+  },
+  {
+    "nume_sala": "Sala 7",
+    "numar_proiectii": 5,
+    "pret_mediu_bilet": 36.3
+  },
+  {
+    "nume_sala": "Sala 4",
+    "numar_proiectii": 5,
+    "pret_mediu_bilet": 37.3
+  },
+  {
+    "nume_sala": "Sala 3",
+    "numar_proiectii": 5,
+    "pret_mediu_bilet": 32.2
+  },
+  {
+    "nume_sala": "Sala 11",
+    "numar_proiectii": 4,
+    "pret_mediu_bilet": 35.25
+  },
+  {
+    "nume_sala": "Sala 10",
+    "numar_proiectii": 4,
+    "pret_mediu_bilet": 26.25
+  },
+  {
+    "nume_sala": "Sala 6",
+    "numar_proiectii": 3,
+    "pret_mediu_bilet": 28.33
+  },
+  {
+    "nume_sala": "Sala 8",
+    "numar_proiectii": 2,
+    "pret_mediu_bilet": 22.5
+  },
+  {
+    "nume_sala": "Sala 5",
+    "numar_proiectii": 2,
+    "pret_mediu_bilet": 27.5
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "id": 12,
+    "titlu": "Secretul Myself",
+    "gen": "Comedie",
+    "bilete_vandute": 16,
+    "incasari_totale": 557.5
+  },
+  {
+    "id": 23,
+    "titlu": "Comunistul Support",
+    "gen": "SF",
+    "bilete_vandute": 11,
+    "incasari_totale": 330.5
+  },
+  {
+    "id": 39,
+    "titlu": "Comunistul Open",
+    "gen": "Drama",
+    "bilete_vandute": 10,
+    "incasari_totale": 295.0
+  },
+  {
+    "id": 13,
+    "titlu": "Povestea Tv",
+    "gen": "Comedie",
+    "bilete_vandute": 10,
+    "incasari_totale": 290.0
+  },
+  {
+    "id": 18,
+    "titlu": "Intoarcerea Contain",
+    "gen": "Thriller",
+    "bilete_vandute": 6,
+    "incasari_totale": 273.0
+  },
+  {
+    "id": 30,
+    "titlu": "Povestea Record",
+    "gen": "Thriller",
+    "bilete_vandute": 5,
+    "incasari_totale": 227.5
+  },
+  {
+    "id": 37,
+    "titlu": "Intoarcerea Language",
+    "gen": "Drama",
+    "bilete_vandute": 9,
+    "incasari_totale": 225.0
+  },
+  {
+    "id": 29,
+    "titlu": "Orasul Just",
+    "gen": "Animatie",
+    "bilete_vandute": 4,
+    "incasari_totale": 182.0
+  },
+  {
+    "id": 8,
+    "titlu": "Povestea Take",
+    "gen": "Comedie",
+    "bilete_vandute": 9,
+    "incasari_totale": 180.0
+  },
+  {
+    "id": 38,
+    "titlu": "Comunistul Level",
+    "gen": "Documentar",
+    "bilete_vandute": 7,
+    "incasari_totale": 170.0
+  },
+  {
+    "id": 31,
+    "titlu": "Intoarcerea Power",
+    "gen": "Drama",
+    "bilete_vandute": 5,
+    "incasari_totale": 165.5
+  },
+  {
+    "id": 25,
+    "titlu": "Povestea Three",
+    "gen": "Drama",
+    "bilete_vandute": 4,
+    "incasari_totale": 135.5
+  },
+  {
+    "id": 5,
+    "titlu": "Comunistul Give",
+    "gen": "Documentar",
+    "bilete_vandute": 4,
+    "incasari_totale": 100.0
+  },
+  {
+    "id": 34,
+    "titlu": "Ultimul Loss",
+    "gen": "SF",
+    "bilete_vandute": 2,
+    "incasari_totale": 91.0
+  },
+  {
+    "id": 24,
+    "titlu": "Intoarcerea After",
+    "gen": "Actiune",
+    "bilete_vandute": 2,
+    "incasari_totale": 91.0
+  },
+  {
+    "id": 21,
+    "titlu": "Povestea Daughter",
+    "gen": "Documentar",
+    "bilete_vandute": 3,
+    "incasari_totale": 90.0
+  },
+  {
+    "id": 27,
+    "titlu": "Intoarcerea Possible",
+    "gen": "Actiune",
+    "bilete_vandute": 3,
+    "incasari_totale": 90.0
+  },
+  {
+    "id": 4,
+    "titlu": "Orasul Interview",
+    "gen": "Horror",
+    "bilete_vandute": 4,
+    "incasari_totale": 90.0
+  },
+  {
+    "id": 26,
+    "titlu": "Secretul Player",
+    "gen": "Drama",
+    "bilete_vandute": 4,
+    "incasari_totale": 80.0
+  },
+  {
+    "id": 2,
+    "titlu": "Secretul Increase",
+    "gen": "Animatie",
+    "bilete_vandute": 3,
+    "incasari_totale": 75.0
+  },
+  {
+    "id": 35,
+    "titlu": "Orasul Offer",
+    "gen": "Drama",
+    "bilete_vandute": 3,
+    "incasari_totale": 75.0
+  },
+  {
+    "id": 36,
+    "titlu": "Secretul Player",
+    "gen": "Horror",
+    "bilete_vandute": 2,
+    "incasari_totale": 40.0
+  },
+  {
+    "id": 3,
+    "titlu": "Secretul Crime",
+    "gen": "Animatie",
+    "bilete_vandute": 1,
+    "incasari_totale": 30.0
+  },
+  {
+    "id": 28,
+    "titlu": "Secretul Unit",
+    "gen": "SF",
+    "bilete_vandute": 0,
+    "incasari_totale": 0.0
+  },
+  {
+    "id": 15,
+    "titlu": "Ultimul Serve",
+    "gen": "Thriller",
+    "bilete_vandute": 0,
+    "incasari_totale": 0.0
+  },
+  {
+    "id": 40,
+    "titlu": "Misiunea Your",
+    "gen": "Documentar",
+    "bilete_vandute": 0,
+    "incasari_totale": 0.0
+  },
+  {
+    "id": 11,
+    "titlu": "Orasul Approach",
+    "gen": "Animatie",
+    "bilete_vandute": 0,
+    "incasari_totale": 0.0
+  },
+  {
+    "id": 14,
+    "titlu": "Intoarcerea While",
+    "gen": "Animatie",
+    "bilete_vandute": 0,
+    "incasari_totale": 0.0
+  },
+  {
+    "id": 1,
+    "titlu": "Comunistul Feeling",
+    "gen": "Horror",
+    "bilete_vandute": 0,
+    "incasari_totale": 0.0
+  },
+  {
+    "id": 17,
+    "titlu": "Orasul Hotel",
+    "gen": "Comedie",
+    "bilete_vandute": 0,
+    "incasari_totale": 0.0
+  },
+  {
+    "id": 33,
+    "titlu": "Secretul Process",
+    "gen": "Horror",
+    "bilete_vandute": 0,
+    "incasari_totale": 0.0
+  },
+  {
+    "id": 20,
+    "titlu": "Comunistul Wear",
+    "gen": "Drama",
+    "bilete_vandute": 0,
+    "incasari_totale": 0.0
+  },
+  {
+    "id": 7,
+    "titlu": "Misiunea Protect",
+    "gen": "Actiune",
+    "bilete_vandute": 0,
+    "incasari_totale": 0.0
+  },
+  {
+    "id": 10,
+    "titlu": "Secretul Pretty",
+    "gen": "Comedie",
+    "bilete_vandute": 0,
+    "incasari_totale": 0.0
+  },
+  {
+    "id": 16,
+    "titlu": "Ultimul Join",
+    "gen": "Thriller",
+    "bilete_vandute": 0,
+    "incasari_totale": 0.0
+  },
+  {
+    "id": 32,
+    "titlu": "Misiunea Of",
+    "gen": "Horror",
+    "bilete_vandute": 0,
+    "incasari_totale": 0.0
+  },
+  {
+    "id": 19,
+    "titlu": "Secretul Defense",
+    "gen": "Comedie",
+    "bilete_vandute": 0,
+    "incasari_totale": 0.0
+  },
+  {
+    "id": 6,
+    "titlu": "Orasul To",
+    "gen": "Documentar",
+    "bilete_vandute": 0,
+    "incasari_totale": 0.0
+  },
+  {
+    "id": 22,
+    "titlu": "Secretul Dream",
+    "gen": "Thriller",
+    "bilete_vandute": 0,
+    "incasari_totale": 0.0
+  },
+  {
+    "id": 9,
+    "titlu": "Orasul Them",
+    "gen": "Actiune",
+    "bilete_vandute": 0,
+    "incasari_totale": 0.0
+  }
+]

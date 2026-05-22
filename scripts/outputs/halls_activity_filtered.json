@@ -1,0 +1,106 @@
+{
+  "criteriu_filtrare_minim": 3,
+  "data_generare": "2026-03-24",
+  "sali_identificate": [
+    {
+      "info_sala": {
+        "nume": "Sala 9",
+        "capacitate_maxima": 100
+      },
+      "activitate": {
+        "proiectii_active": 10,
+        "status": "Intens"
+      }
+    },
+    {
+      "info_sala": {
+        "nume": "Sala 12",
+        "capacitate_maxima": 100
+      },
+      "activitate": {
+        "proiectii_active": 8,
+        "status": "Intens"
+      }
+    },
+    {
+      "info_sala": {
+        "nume": "Sala 2",
+        "capacitate_maxima": 100
+      },
+      "activitate": {
+        "proiectii_active": 6,
+        "status": "Intens"
+      }
+    },
+    {
+      "info_sala": {
+        "nume": "Sala 1",
+        "capacitate_maxima": 100
+      },
+      "activitate": {
+        "proiectii_active": 6,
+        "status": "Intens"
+      }
+    },
+    {
+      "info_sala": {
+        "nume": "Sala 7",
+        "capacitate_maxima": 100
+      },
+      "activitate": {
+        "proiectii_active": 5,
+        "status": "Normal"
+      }
+    },
+    {
+      "info_sala": {
+        "nume": "Sala 4",
+        "capacitate_maxima": 100
+      },
+      "activitate": {
+        "proiectii_active": 5,
+        "status": "Normal"
+      }
+    },
+    {
+      "info_sala": {
+        "nume": "Sala 3",
+        "capacitate_maxima": 100
+      },
+      "activitate": {
+        "proiectii_active": 5,
+        "status": "Normal"
+      }
+    },
+    {
+      "info_sala": {
+        "nume": "Sala 10",
+        "capacitate_maxima": 100
+      },
+      "activitate": {
+        "proiectii_active": 4,
+        "status": "Normal"
+      }
+    },
+    {
+      "info_sala": {
+        "nume": "Sala 11",
+        "capacitate_maxima": 100
+      },
+      "activitate": {
+        "proiectii_active": 4,
+        "status": "Normal"
+      }
+    },
+    {
+      "info_sala": {
+        "nume": "Sala 6",
+        "capacitate_maxima": 100
+      },
+      "activitate": {
+        "proiectii_active": 3,
+        "status": "Normal"
+      }
+    }
+  ]
+}

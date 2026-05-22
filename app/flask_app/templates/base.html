@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title or "Cinema City Admin" }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <!-- Fundalurile interactive (Praf și Lumina) -->
+  <div id="particles-js"></div>
+  <div class="spotlight"></div>
+
+  <header class="topbar">
+    <div class="top-strip">
+      <div class="brand">
+        <div class="dot"></div>
+        <div class="brand-logo">
+          <span class="brand-cinema">CINEMA</span>
+          <span class="brand-city">CITY</span>
+        </div>
+        <div class="brand-badge">ADMIN</div>
+      </div>
+      <div class="strip-right">
+        <div class="strip-info">SISTEM GESTIUNE CINEMA v1.0</div>
+      </div>
+    </div>
+
+    <nav class="nav-bar">
+      <a href="{{ url_for('index') }}" class="{% if request.path == '/' %}active{% endif %}">Dashboard</a>
+      <a href="{{ url_for('search') }}" class="{% if request.path == '/search' %}active{% endif %}">Căutare</a>
+
+      {% for t, c in site_cfg.items() %}
+        <a href="{{ url_for('crud_list', table=t) }}" class="{% if table == t %}active{% endif %}">
+          {{ c["title"] }}
+        </a>
+      {% endfor %}
+    </nav>
+  </header>
+
+  <main class="container">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <div class="flash-wrap">
+          {% for category, message in messages %}
+            <div class="flash flash-{{ category }}">{{ message }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <span>&copy; 2026 CINEMA CITY ROMÂNIA</span>
+    <div class="footer-cc">ADMIN PANEL</div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+      // 1. PARTICULES.JS (Praf iluminat de proiector)
+      particlesJS("particles-js", {
+        "particles": {
+          "number": { "value": 40, "density": { "enable": true, "value_area": 800 } },
+          "color": { "value": "#ff9d00" },
+          "shape": { "type": "circle" },
+          "opacity": { "value": 0.2, "random": true },
+          "size": { "value": 2, "random": true },
+          "move": { "enable": true, "speed": 0.8, "direction": "top", "random": true, "out_mode": "out" }
+        },
+        "interactivity": { "events": { "onhover": { "enable": false } } }
+      });
+
+      // 2. VANILLA TILT (Efect 3D pe carduri)
+      // Se aplică pe toate elementele care au clasa .dash-card
+      VanillaTilt.init(document.querySelectorAll(".dash-card"), {
+        max: 8,           // Unghiul maxim de înclinare
+        speed: 400,       // Viteza de tranziție
+        glare: true,      // Activează reflexia de tip sticlă
+        "max-glare": 0.15 // Cât de puternică e reflexia (0.15 e subtil și elegant)
+      });
+
+      // Aplicăm un efect 3D mai subtil și pe panouri/statistici
+      VanillaTilt.init(document.querySelectorAll(".statbox, .panel"), { max: 3, speed: 400 });
+
+      // 3. SPOTLIGHT (Lanterna care urmărește mouse-ul)
+      const spotlight = document.querySelector('.spotlight');
+      window.addEventListener('mousemove', e => {
+        spotlight.style.setProperty('--x', `${e.clientX}px`);
+        spotlight.style.setProperty('--y', `${e.clientY}px`);
+      });
+
+      // 4. BUTOANE: Efect de undă (Ripple) + Popcorn Confetti
+      const buttons = document.querySelectorAll('.btn');
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+
+          // --- Unda Magnetică (Ripple) ---
+          const rect = btn.getBoundingClientRect();
+          let x = e.clientX - rect.left;
+          let y = e.clientY - rect.top;
+
+          let ripple = document.createElement('span');
+          ripple.style.left = x + 'px';
+          ripple.style.top = y + 'px';
+          ripple.classList.add('ripple');
+          btn.appendChild(ripple);
+
+          setTimeout(() => { ripple.remove(); }, 600);
+
+          //Efectul Popcorn
+          confetti({
+            particleCount: 25,     // Câte bucăți sar
+            spread: 70,            // Cât de mult se împrăștie
+            origin: {              // De unde sar (din coordonatele click-ului)
+              x: e.clientX / window.innerWidth,
+              y: e.clientY / window.innerHeight
+            },
+            shapes: ['text'],      // Setăm forma pe text (emoji)
+            shapeOptions: {
+              text: { value: ['🍿', '✨', '🎬'] } // Emoticoanele folosite
+            },
+            scalar: 2              // Mărimea confetti-ului
+          });
+
+        });
+      });
+    });
+  </script>
+</body>
+</html>

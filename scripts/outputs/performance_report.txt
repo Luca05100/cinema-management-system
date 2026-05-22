@@ -1,0 +1,18 @@
+=== ANALIZA PERFORMANTA CINEMA (SQL) ===
+
+Rulări per query: 50
+
+Query: User by Email
+  AVG Inainte: 8.4675 ms
+  AVG Dupa:    7.9977 ms
+  Imbunatatire: 5.5%
+
+Query: Movie by Title
+  AVG Inainte: 8.2172 ms
+  AVG Dupa:    6.8854 ms
+  Imbunatatire: 16.2%
+
+Query: Tickets by Price
+  AVG Inainte: 11.2814 ms
+  AVG Dupa:    10.6173 ms
+  Imbunatatire: 5.9%

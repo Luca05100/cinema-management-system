@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-head">
+  <div>
+    <h1>Gestiune {{ table_cfg["title"] }}</h1>
+    <p class="muted">Listare completă a înregistrărilor din baza de date.</p>
+  </div>
+  <a href="{{ url_for('crud_create', table=table) }}" class="btn">＋ Adaugă Nou</a>
+</div>
+
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        {% for col in cols %} <th>{{ col|upper|replace('_', ' ') }}</th> {% endfor %}
+        <th style="text-align: right;">OPȚIUNI</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in rows %}
+      <tr>
+        {% for val in row %}
+        <td>
+          {% if loop.first %}<code>#{{ val }}</code>{% else %}{{ val }}{% endif %}
+        </td>
+        {% endfor %}
+        <td style="text-align: right;">
+          <div class="actions-col" style="justify-content: flex-end;">
+            <a href="{{ url_for('crud_edit', table=table, rec_id=row[0]) }}" class="btn btn-ghost">Edit</a>
+            <form action="{{ url_for('crud_delete', table=table, rec_id=row[0]) }}" method="post" onsubmit="return confirm('Ștergi definitiv?');">
+              <button type="submit" class="btn btn-danger">Șterge</button>
+            </form>
+          </div>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

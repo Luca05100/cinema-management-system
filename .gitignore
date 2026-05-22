@@ -1,0 +1,20 @@
+# Medii virtuale
+.venv/
+venv/
+env/
+.env
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# IDE si Mac
+.idea/
+.DS_Store
+
+# Log-uri
+*.log
+
+# Baza de date locala (daca e cazul)
+mysql_data/
+mariadb_data/
